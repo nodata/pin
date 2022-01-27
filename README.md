@@ -3,6 +3,7 @@ Syntax sugar for the verbose NSLayoutConstraint api
 
 ![pins](https://user-images.githubusercontent.com/1578003/151350111-a972f743-7b37-4f2e-9846-0972a70304a5.png)
 
+This was built a long time ago in various guises but finally released as part of the Mercari - Fractal Open Sourcing.. however it's worth having it in own package as it has stand alone value.
 
 ```
         // Pinning to self
@@ -136,3 +137,5 @@ Syntax sugar for the verbose NSLayoutConstraint api
                                        .height(-20.0)])
     }
 ```
+
+License Copyright 2016 Anthony Smith, (no data) ltd, Licensed under the MIT License.
