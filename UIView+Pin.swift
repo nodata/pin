@@ -61,153 +61,153 @@ public struct Pin {
 
     // MARK: - Static Variables
 
-    public static var left: Pin { return .left() }
-    public static var right: Pin { return .right() }
-    public static var top: Pin { return .top() }
-    public static var bottom: Pin { return .bottom() }
-    public static var leading: Pin { return .leading() }
-    public static var trailing: Pin { return .trailing() }
-    public static var width: Pin { return .width() }
-    public static var height: Pin { return .height() }
-    public static var centerX: Pin { return .centerX() }
-    public static var centerY: Pin { return .centerY() }
-    public static var lastBaseline: Pin { return .lastBaseline() }
-    public static var firstBaseline: Pin { return .firstBaseline() }
-    public static var leftMargin: Pin { return .leftMargin() }
-    public static var rightMargin: Pin { return .rightMargin() }
-    public static var topMargin: Pin { return .topMargin() }
-    public static var bottomMargin: Pin { return .bottomMargin() }
-    public static var leadingMargin: Pin { return .leadingMargin() }
-    public static var trailingMargin: Pin { return .trailingMargin() }
-    public static var centerXWithinMargins: Pin { return .centerXWithinMargins() }
-    public static var centerYWithinMargins: Pin { return .centerYWithinMargins() }
+    public static var left: Pin { .left() }
+    public static var right: Pin { .right() }
+    public static var top: Pin { .top() }
+    public static var bottom: Pin { .bottom() }
+    public static var leading: Pin { .leading() }
+    public static var trailing: Pin { .trailing() }
+    public static var width: Pin { .width() }
+    public static var height: Pin { .height() }
+    public static var centerX: Pin { .centerX() }
+    public static var centerY: Pin { .centerY() }
+    public static var lastBaseline: Pin { .lastBaseline() }
+    public static var firstBaseline: Pin { .firstBaseline() }
+    public static var leftMargin: Pin { .leftMargin() }
+    public static var rightMargin: Pin { .rightMargin() }
+    public static var topMargin: Pin { .topMargin() }
+    public static var bottomMargin: Pin { .bottomMargin() }
+    public static var leadingMargin: Pin { .leadingMargin() }
+    public static var trailingMargin: Pin { .trailingMargin() }
+    public static var centerXWithinMargins: Pin { .centerXWithinMargins() }
+    public static var centerYWithinMargins: Pin { .centerYWithinMargins() }
 
-    public static var below: Pin { return .below() }
-    public static var above: Pin { return .above() }
-    public static var leftOf: Pin { return .leftOf() }
-    public static var rightOf: Pin { return .rightOf() }
+    public static var below: Pin { .below() }
+    public static var above: Pin { .above() }
+    public static var leftOf: Pin { .leftOf() }
+    public static var rightOf: Pin { .rightOf() }
 
-    public static var heightToWidth: Pin { return .heightToWidth() }
-    public static var widthToHeight: Pin { return .widthToHeight() }
+    public static var heightToWidth: Pin { .heightToWidth() }
+    public static var widthToHeight: Pin { .widthToHeight() }
 
-    public static var none: Pin { return Pin(.none) }
+    public static var none: Pin { Pin(.none) }
 
     // MARK: - Static Functions
 
     public static func custom(_ attribute1: NSLayoutConstraint.Attribute, to attribute2: NSLayoutConstraint.Attribute, constant: CGFloat = 0.0, options: [Option] = []) -> Pin {
-        return Pin(.custom(attribute1, attribute2), constant: constant, options: options)
+        Pin(.custom(attribute1, attribute2), constant: constant, options: options)
     }
 
     public static func left(_ constant: CGFloat = 0.0, options: [Option] = []) -> Pin {
-        return Pin(.left, constant: constant, options: options)
+        Pin(.left, constant: constant, options: options)
     }
 
     public static func right(_ constant: CGFloat = 0.0, options: [Option] = []) -> Pin {
-        return Pin(.right, constant: constant, options: options)
+        Pin(.right, constant: constant, options: options)
     }
 
     public static func top(_ constant: CGFloat = 0.0, options: [Option] = []) -> Pin {
-        return Pin(.top, constant: constant, options: options)
+        Pin(.top, constant: constant, options: options)
     }
 
     public static func bottom(_ constant: CGFloat = 0.0, options: [Option] = []) -> Pin {
-        return Pin(.bottom, constant: constant, options: options)
+        Pin(.bottom, constant: constant, options: options)
     }
 
     public static func leading(_ constant: CGFloat = 0.0, options: [Option] = []) -> Pin {
-        return Pin(.leading, constant: constant, options: options)
+        Pin(.leading, constant: constant, options: options)
     }
 
     public static func trailing(_ constant: CGFloat = 0.0, options: [Option] = []) -> Pin {
-        return Pin(.trailing, constant: constant, options: options)
+        Pin(.trailing, constant: constant, options: options)
     }
 
     public static func width(_ constant: CGFloat = 0.0, options: [Option] = []) -> Pin {
-        return Pin(.width(false), constant: constant, options: options)
+        Pin(.width(false), constant: constant, options: options)
     }
 
     public static func height(_ constant: CGFloat = 0.0, options: [Option] = []) -> Pin {
-        return Pin(.height(false), constant: constant, options: options)
+        Pin(.height(false), constant: constant, options: options)
     }
 
     public static func width(asConstant: CGFloat, options: [Option] = []) -> Pin {
-        return Pin(.width(true), constant: asConstant, options: options)
+        Pin(.width(true), constant: asConstant, options: options)
     }
 
     public static func height(asConstant: CGFloat, options: [Option] = []) -> Pin {
-        return Pin(.height(true), constant: asConstant, options: options)
+        Pin(.height(true), constant: asConstant, options: options)
     }
 
     public static func centerX(_ constant: CGFloat = 0.0, options: [Option] = []) -> Pin {
-        return Pin(.centerX, constant: constant, options: options)
+        Pin(.centerX, constant: constant, options: options)
     }
 
     public static func centerY(_ constant: CGFloat = 0.0, options: [Option] = []) -> Pin {
-        return Pin(.centerY, constant: constant, options: options)
+        Pin(.centerY, constant: constant, options: options)
     }
 
     public static func lastBaseline(_ constant: CGFloat = 0.0, options: [Option] = []) -> Pin {
-        return Pin(.lastBaseline, constant: constant, options: options)
+        Pin(.lastBaseline, constant: constant, options: options)
     }
 
     public static func firstBaseline(_ constant: CGFloat = 0.0, options: [Option] = []) -> Pin {
-        return Pin(.firstBaseline, constant: constant, options: options)
+        Pin(.firstBaseline, constant: constant, options: options)
     }
 
     public static func leftMargin(_ constant: CGFloat = 0.0, options: [Option] = []) -> Pin {
-        return Pin(.leftMargin, constant: constant, options: options)
+        Pin(.leftMargin, constant: constant, options: options)
     }
 
     public static func rightMargin(_ constant: CGFloat = 0.0, options: [Option] = []) -> Pin {
-        return Pin(.rightMargin, constant: constant, options: options)
+        Pin(.rightMargin, constant: constant, options: options)
     }
 
     public static func topMargin(_ constant: CGFloat = 0.0, options: [Option] = []) -> Pin {
-        return Pin(.topMargin, constant: constant, options: options)
+        Pin(.topMargin, constant: constant, options: options)
     }
 
     public static func bottomMargin(_ constant: CGFloat = 0.0, options: [Option] = []) -> Pin {
-        return Pin(.bottomMargin, constant: constant, options: options)
+        Pin(.bottomMargin, constant: constant, options: options)
     }
 
     public static func leadingMargin(_ constant: CGFloat = 0.0, options: [Option] = []) -> Pin {
-        return Pin(.leadingMargin, constant: constant, options: options)
+        Pin(.leadingMargin, constant: constant, options: options)
     }
 
     public static func trailingMargin(_ constant: CGFloat = 0.0, options: [Option] = []) -> Pin {
-        return Pin(.trailingMargin, constant: constant, options: options)
+        Pin(.trailingMargin, constant: constant, options: options)
     }
 
     public static func centerXWithinMargins(_ constant: CGFloat = 0.0, options: [Option] = []) -> Pin {
-        return Pin(.centerXWithinMargins, constant: constant, options: options)
+        Pin(.centerXWithinMargins, constant: constant, options: options)
     }
 
     public static func centerYWithinMargins(_ constant: CGFloat = 0.0, options: [Option] = []) -> Pin {
-        return Pin(.centerYWithinMargins, constant: constant, options: options)
+        Pin(.centerYWithinMargins, constant: constant, options: options)
     }
 
     public static func below(_ constant: CGFloat = 0.0, options: [Option] = []) -> Pin {
-        return Pin(.below, constant: constant, options: options)
+        Pin(.below, constant: constant, options: options)
     }
 
     public static func above(_ constant: CGFloat = 0.0, options: [Option] = []) -> Pin {
-        return Pin(.above, constant: constant, options: options)
+        Pin(.above, constant: constant, options: options)
     }
 
     public static func leftOf(_ constant: CGFloat = 0.0, options: [Option] = []) -> Pin {
-        return Pin(.leftOf, constant: constant, options: options)
+        Pin(.leftOf, constant: constant, options: options)
     }
 
     public static func rightOf(_ constant: CGFloat = 0.0, options: [Option] = []) -> Pin {
-        return Pin(.rightOf, constant: constant, options: options)
+        Pin(.rightOf, constant: constant, options: options)
     }
 
     public static func heightToWidth(_ constant: CGFloat = 0.0, options: [Option] = []) -> Pin {
-        return Pin(.heightToWidth, constant: constant, options: options)
+        Pin(.heightToWidth, constant: constant, options: options)
     }
 
     public static func widthToHeight(_ constant: CGFloat = 0.0, options: [Option] = []) -> Pin {
-        return Pin(.widthToHeight, constant: constant, options: options)
+        Pin(.widthToHeight, constant: constant, options: options)
     }
 
     // MARK: - Initialisation
