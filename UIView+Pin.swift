@@ -3,7 +3,7 @@
 //  DesignSystem
 //
 //  Created by Anthony Smith on 03/09/2018.
-//  Copyright © 2018 mercari. All rights reserved.
+//  Copyright © 2018 No Data. All rights reserved.
 //
 
 import Foundation
